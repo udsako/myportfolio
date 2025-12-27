@@ -5,30 +5,41 @@ import Link from "next/link";
 export default function Header() {
   return (
     /* FULL-WIDTH BACKGROUND */
-    <header className="w-full bg-gray-900 text-gray-200 sticky top-0 z-50">
+    <header className="w-full bg-purple-950 text-gray-200 sticky top-0 z-50">
       
       {/* CONSTRAINED CONTENT */}
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4 sm:px-6 md:px-16 py-6 shadow-md">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between flex-nowrap px-3 sm:px-4 md:px-16 py-4 shadow-md">
         
         {/* LOGO / TITLE */}
-        <div className="text-2xl font-bold text-indigo-400 whitespace-nowrap">
+        <div className="font-bold text-white-600 whitespace-nowrap
+                        text-sm sm:text-base md:text-xl lg:text-2xl">
           MY PORTFOLIO
         </div>
 
         {/* NAVIGATION */}
-        <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium justify-end text-right">
-          <Link href="/" className="hover:text-indigo-400 transition">
+        <nav
+          className="
+            flex flex-nowrap items-center
+            gap-x-2 sm:gap-x-4 md:gap-x-6
+            text-xs sm:text-sm md:text-base
+            font-medium text-right
+          "
+        >
+          <Link href="/" className="hover:text-indigo-400 transition whitespace-nowrap">
             Home
           </Link>
-          <Link href="/about" className="hover:text-indigo-400 transition">
+
+          <Link href="/about" className="hover:text-indigo-400 transition whitespace-nowrap">
             About
           </Link>
-          <Link href="/projects" className="hover:text-indigo-400 transition">
+
+          <Link href="/projects" className="hover:text-indigo-400 transition whitespace-nowrap">
             Projects
           </Link>
+
           <a
             href="#contact-footer"
-            className="hover:text-indigo-400 transition"
+            className="hover:text-indigo-400 transition whitespace-nowrap"
             onClick={(e) => {
               e.preventDefault();
               document
