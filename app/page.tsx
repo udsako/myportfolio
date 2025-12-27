@@ -1,65 +1,77 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { motion } from "framer-motion";
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    /* FULL VIEWPORT BACKGROUND */
+    <div className="w-screen min-h-screen bg-gradient-to-br from-black via-zinc-900 to-neutral-950 text-gray-200">
+      
+      {/* CONTENT WRAPPER (CONSTRAINED, NOT BACKGROUND) */}
+      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-16 lg:px-20 py-16 sm:py-20 flex items-center min-h-screen">
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center w-full"
+        >
+          {/* TEXT CONTENT */}
+          <div className="order-2 md:order-1 flex flex-col justify-center">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="text-indigo-400">Blessing Sako</span>
+            </h1>
+
+            <p className="mt-3 sm:mt-4 text-[10px] sm:text-xs md:text-sm lg:text-base uppercase tracking-[0.18em] sm:tracking-[0.25em] text-indigo-300">
+              Data Analyst • Software Developer • Product Management
+            </p>
+
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-full md:max-w-2xl leading-relaxed">
+              I design and build clean, reliable, and human-centered digital
+              products. My focus is on turning complex ideas into practical,
+              scalable solutions through thoughtful engineering and clear design.
+            </p>
+
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-full md:max-w-2xl leading-relaxed">
+              My work spans modern web applications, system-level thinking, and
+              data-driven software always with usability, performance, and
+              long-term impact in mind.
+            </p>
+
+            <div className="mt-6 sm:mt-8 md:mt-10">
+              <h3 className="text-[9px] sm:text-xs md:text-sm font-bold uppercase tracking-widest text-gray-300 mb-2 sm:mb-3">
+                My Core Values
+              </h3>
+              <div className="flex flex-wrap gap-2 sm:gap-3 text-[0.55rem] sm:text-[0.65rem] md:text-xs uppercase tracking-widest font-semibold text-gray-200">
+                <span>Clarity</span>
+                <span>•</span>
+                <span>Reliability</span>
+                <span>•</span>
+                <span>Impact</span>
+                <span>•</span>
+                <span>Continuous Learning</span>
+              </div>
+            </div>
+
+            <p className="mt-4 sm:mt-6 text-[10px] sm:text-xs md:text-sm font-bold text-white-400 italic">
+              Explore my background, projects, and experience using the navigation above.
+            </p>
+          </div>
+
+          {/* IMAGE */}
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.4 }}
+            className="order-1 md:order-2 relative w-full max-w-[22rem] sm:max-w-[28rem] md:max-w-[34rem] h-80 sm:h-96 md:h-[34rem] mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+            <img
+              src="/image1.jpg"
+              alt="Blessing Sako"
+              className="w-full h-full object-cover"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+            <div className="absolute inset-0 bg-indigo-500/15 mix-blend-overlay" />
+          </motion.div>
+        </motion.section>
+      </div>
     </div>
   );
 }
