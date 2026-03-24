@@ -3,6 +3,13 @@ import Link from "next/link";
 
 const projects = [
   {
+  title: "StudEx Student Service Platform",
+  description:
+    "A student-focused service platform designed to connect students with other student vendors, enabling seamless booking of services and efficient business record management. The platform simplifies how student entrepreneurs offer services while helping users easily discover, engage, and track service interactions within a unified system.",
+  github: "https://github.com/udsako/studexng",
+  image: "/studEx.jpg", // add your image file
+  },
+  {
     title: "PAU Staff Management System",
     description:
       "A Java-based staff management system developed as a 300-level project. The application enables staff to record attendance upon arrival and departure, ensuring accurate tracking of working hours and promoting accountability.",

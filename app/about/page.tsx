@@ -16,7 +16,7 @@ export default function AboutPage() {
 
         {/* FLOATING IMAGE */}
         <img
-          src="/image2.jpeg"
+          src="/image3.jpeg"
           alt="Blessing Sako"
           className="
             float-none
@@ -132,6 +132,12 @@ export default function AboutPage() {
 }
 
 const projects = [
+  {
+    title: "StudEx Platform",
+    description:
+      "A student service platform where students can book for services from other student vendors easily and keep track of business records better.",
+    image: "/studEx.jpg",
+  },
   {
     title: "Struqtura AI Data Cleaner",
     description:
