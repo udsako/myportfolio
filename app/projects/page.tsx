@@ -7,7 +7,7 @@ const projects = [
   description:
     "A student-focused service platform designed to connect students with other student vendors, enabling seamless booking of services and efficient business record management. The platform simplifies how student entrepreneurs offer services while helping users easily discover, engage, and track service interactions within a unified system.",
   github: "https://github.com/udsako/studexng",
-  image: "/studEx.jpg", // add your image file
+  image: "/studEx.jpeg", 
   },
   {
     title: "PAU Staff Management System",

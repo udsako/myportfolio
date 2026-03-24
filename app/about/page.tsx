@@ -136,7 +136,7 @@ const projects = [
     title: "StudEx Platform",
     description:
       "A student service platform where students can book for services from other student vendors easily and keep track of business records better.",
-    image: "/studEx.jpg",
+    image: "/studEx.jpeg",
   },
   {
     title: "Struqtura AI Data Cleaner",
