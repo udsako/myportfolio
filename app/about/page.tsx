@@ -88,7 +88,7 @@ export default function AboutPage() {
         </p>
 
         <a
-          href="/resume.pdf"
+          href="/SAKO BLESSING'S RESUME.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-2xl px-6 h-11 border border-zinc-700 text-white text-sm font-medium hover:bg-zinc-800 transition"
