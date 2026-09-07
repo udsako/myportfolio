@@ -133,6 +133,12 @@ export default function AboutPage() {
 
 const projects = [
   {
+    title: "Mainstream Basketball Platform",
+    description:
+      "A basketball event platform where organizers can publish tournaments and/or programs, and players can register with ease.",
+    image: "/mainstream.jpeg",
+  },
+  {
     title: "StudEx Platform",
     description:
       "A student service platform where students can book for services from other student vendors easily and keep track of business records better.",

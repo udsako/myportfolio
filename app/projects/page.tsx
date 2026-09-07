@@ -3,6 +3,13 @@ import Link from "next/link";
 
 const projects = [
   {
+  title: "Mainstream Basketball Platform",
+  description:
+    "A full-stack event management platform built for a grassroots basketball organization, designed to bring young players together and allows for seamless online registration for tournaments and other arranged programs. The platform simplifies how organizers publish and manage events while giving them real-time visibility into registrations and player sign-ups within a unified admin system.",
+  github: "https://github.com/udsako/mainstream-",
+  image: "/mainstream.jpeg", 
+  },
+  {
   title: "StudEx Student Service Platform",
   description:
     "A student-focused service platform designed to connect students with other student vendors, enabling seamless booking of services and efficient business record management. The platform simplifies how student entrepreneurs offer services while helping users easily discover, engage, and track service interactions within a unified system.",
