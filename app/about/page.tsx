@@ -43,8 +43,8 @@ export default function AboutPage() {
         </p>
 
         <p className="mb-10">
-          I am Blessing Sako, a final-year Computer Science undergraduate at
-          Pan-Atlantic University (400 level), focused on developing data-driven
+          I am Blessing Sako, a Computer Science graduate at
+          Pan-Atlantic University, focused on developing data-driven
           and production-ready software systems. My work sits at the intersection
           of data analysis, full-stack development, and structured problem solving.
         </p>
@@ -88,7 +88,7 @@ export default function AboutPage() {
         </p>
 
         <a
-          href="/MY-RESUME.pdf"
+          href="/CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-2xl px-6 h-11 border border-zinc-700 text-white text-sm font-medium hover:bg-zinc-800 transition"
@@ -161,12 +161,6 @@ const projects = [
     description:
       "Web application developed during internship to assess spiritual gifts and deploy to production.",
     image: "/spiritual-gifts.jpeg",
-  },
-  {
-    title: "CSC 419 Deployment",
-    description:
-      "Production deployment of CSC 419 academic project with server configuration and hosting.",
-    image: "/csc419deploymenttest.png",
   },
   {
     title: "PAU Cafeteria Management System",
